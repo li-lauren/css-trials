@@ -3,10 +3,66 @@
 
   <head>
     <style>
+        
+        .bg {
+            height: 130px;
+            width: 600px;
+            background-color: #555555;
+            margin-top: 10px;
+        }
+
+        .box {
+            display: inline-block;
+            margin: 6px;
+            margin-right: 0;
+            background-color: #cccccc;
+            height: 118px;
+        }
+
+        #top .box {
+            width: 32%;
+        }
+
+        #middle .box {
+            vertical-align: top;
+            width: 23.75%;
+        }
+
+        #middle .box:nth-child(2n) {
+            height: 75px;
+        }
+
+        #middle .box:nth-child(2n+1) {
+            height: 100px;
+        }
+
+        #bottom .box {
+            width: 48.5%;
+        }
+
+        #bottom .box:nth-child(1) {
+            height: 35px;
+        }
+        
     </style>
   </head>
 
   <body>
+      <div class="bg" id="top">
+            <div class="box"></div><!--
+          --><div class="box"></div><!--
+          --><div class="box"></div>
+      </div>
+      <div class="bg" id="middle">
+        <div class="box"></div><!--
+        --><div class="box"></div><!--
+        --><div class="box"></div><!--
+        --><div class="box"></div>
+      </div>
+      <div class="bg" id="bottom">
+        <div class="box"></div><!--
+        --><div class="box"></div><!-- 
+        --></div>
   </body>
 
 </html>
